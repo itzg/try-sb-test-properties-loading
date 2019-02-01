@@ -8,5 +8,9 @@ import org.springframework.stereotype.Component;
 @Component
 @Data
 public class AppProperties {
-  String identifier;
+
+  /**
+   * The identifier our application wants.
+   */
+  String identifier = "default";
 }
