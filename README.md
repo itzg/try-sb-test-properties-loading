@@ -40,7 +40,7 @@ There's a lot going on in this one little, single-field class:
   field's type and name, get picked up by [configuration processing](https://docs.spring.io/spring-boot/docs/current/reference/html/configuration-metadata.html)
   and displayed by your IDE, etc.
 - The field description in the javadoc `/** ... */` also gets picked up by configuration processing 
-  and gets displayed in the IDE tooltip:
+  and is displayed in this IntelliJ quick docs tooltip:
   
   ![](docs/property-tooltip.png)
 
@@ -125,7 +125,8 @@ This one uses a feature provided by Spring Core's test facilities, which is the
 [`@TestPropertySource`](https://docs.spring.io/spring/docs/current/spring-framework-reference/testing.html#spring-testing-annotation-testpropertysource).
 This default use of the annotation is especially useful since you can alter the properties used for
 each test suite. It looks for a `.properties` file named for the test class and the package/directory
-containing it. In this repository, that file is `me/itzg/trytestpropertiesloading/MinimalContextPropSourceTest.properties`.
+containing it. In this repository, that file is `me/itzg/trytestpropertiesloading/MinimalContextPropSourceTest.properties`,
+which is located in `src/test/resources`.
 
 ## Minimal context using inline property values 
 
